@@ -1,6 +1,6 @@
 console.log("JavaScript is successfully connected!");
 
-const restart = document.querySelector("#restart");
+const reset = document.querySelector("#reset");
 const squares = document.querySelectorAll(".square");
 const currentPlayer = document.querySelector("#current-player");
 
