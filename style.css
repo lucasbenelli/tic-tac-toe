@@ -10,12 +10,13 @@
 }
 
 .square {
-    background-color: rgb(238, 34, 34);
+    background-color: rgb(255, 255, 255);
     width: 100px;
     height: 100px;
-    border: solid 1px white;
+    border: solid 1px rgb(0, 0, 0);
     box-sizing: border-box;
     cursor: pointer;
+    padding:0%;
 }
 
 nav {
@@ -29,8 +30,9 @@ nav {
 body {
     margin: 0;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #8f2424;
     font-family: Arial, sans-serif;
+    color:white;
 }
 
 .container {
