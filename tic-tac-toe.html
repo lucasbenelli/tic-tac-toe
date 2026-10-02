@@ -1,44 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lucas benelli || tic-tac-toe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header>
-        <nav>
-            <h1>enter your name</h1>
-            <a href="0">Home</a>
-            <a href="0">About Me</a>
-            <a href="0">Projects</a>
-        </nav>
-    </header>
-
-    <main>
-        <button id="restart">Restart Game</button>
-        <section>
-            <h2>Tic-Tac-Toe</h2>
+<html>
+    <head>
+        <title>lucas benelli | tic-tac-toe</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <p>lucas benelli</p>
+            <nav>
+                <a href="#">Home</a>
+                <a>About Me</a>
+                <a>Projects</a>
+            </nav>
+        </header>
+        <main>
+            <div id="player-data">
+                <p id="player-label">Current Player: </p>
+                <p id="current-player"></p>
+            </div>
             <div class="container">
-                <div class="board" id="board">
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
-        </section>
-    </main>
-
-
-</body>
-
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <button id="reset">Reset</button>
+        </main>
+    </body>
+    <script src="script.js"></script>
 </html>

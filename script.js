@@ -29,3 +29,4 @@ for(const square of squares){
     console.log('Squares:', square);
     square.addEventListener("click", gameLoop);
 }
+
