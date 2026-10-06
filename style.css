@@ -31,6 +31,12 @@ main {
     gap: 20px;
 }
 
+#message {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -41,4 +47,9 @@ main {
     height: 100px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
 }
