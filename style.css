@@ -37,6 +37,30 @@ main {
     color: black;
 }
 
+#scoreboard {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(235, 203, 203);
+    padding: 8px 16px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#scoreboard span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#scoreboard strong {
+    color: rgb(228, 124, 124);
+    font-size: 24px;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

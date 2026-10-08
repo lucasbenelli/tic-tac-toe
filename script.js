@@ -4,10 +4,21 @@ const reset = document.querySelector("#reset");
 const squares = document.querySelectorAll(".square");
 const currentPlayer = document.querySelector("#current-player");
 const messageText = document.querySelector("#message");
+const xScore = document.querySelector("#x-score");
+const oScore = document.querySelector("#o-score");
 
 let moves = 0;
 let gameOver = false;
 let player = "X";
+const scores = {
+  X: 0,
+  O: 0
+};
+
+function updateScoreboard() {
+  xScore.textContent = scores.X;
+  oScore.textContent = scores.O;
+}
 
 function switchPlayer() {
   if (player === "X") {
@@ -40,6 +51,8 @@ function checkWinner() {
 
     if (first !== "" && first === second && first === third) {
       gameOver = true;
+      scores[first] += 1;
+      updateScoreboard();
       messageText.textContent = first + " wins!";
       return true;
     }
@@ -93,4 +106,5 @@ reset.addEventListener("click", resetGame);
 
 currentPlayer.textContent = "X";
 messageText.textContent = "X's turn";
+updateScoreboard();
 
